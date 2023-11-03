@@ -1,11 +1,8 @@
-const btn = document.querySelector('button');
-const img = document.querySelector('img');
-
-const URL = 'https://dog.ceo/api/breeds/image/random';
-
-btn.addEventListener('click', () => {
-	fetch(URL)
-		.then((res) => res.json())
-		.then((data) => img.setAttribute('src', data.message))
-		.catch((err) => console.error(err));
-});
+const input = document.querySelector('input');
+const button = document.querySelector('button');
+const cityName = document.querySelector('.city-name');
+const warning = document.querySelector('.warning');
+const photo = document.querySelector('.photo');
+const weather = document.querySelector('.weather');
+const temperature = document.querySelector('.temperature');
+const humidity = document.querySelector('.humidity');
